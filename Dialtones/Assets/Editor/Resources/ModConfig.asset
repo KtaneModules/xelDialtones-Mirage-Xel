@@ -16,13 +16,13 @@ MonoBehaviour:
   author: PANOPTES
   description: 'I try and I try and I try to make you listen to me.
 
-    Dialtones regular module by PANOPTES version 1.0YouSawNothing.
+    Dialtones regular module by PANOPTES version 1.02.
 
     Module ID: xelDialtones
 
     Github Repo: https://github.com/Mirage-Xel/xelDialtones
 
     Manual: TBD'
-  version: 1.0YouSawNothing
+  version: 1.02
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 9071639642437c545ae59b062564081e, type: 3}

@@ -29,9 +29,12 @@ public class Dialtones : MonoBehaviour {
             button.OnInteract += delegate { PressNormalButton(button); return false; };
         }
         recButton.OnInteract += delegate {PressRecButton(); return false; };
-        playButton.OnInteract += delegate {PressPlayButton(); return false; };
-        GeneratePuzzle();
+        playButton.OnInteract += delegate {PressPlayButton(); return false; };  
 	}
+    void Start()
+    {
+        GeneratePuzzle();
+    }
     void GeneratePuzzle()
     {
         int wordIndex = rnd.Range(0, 30);
@@ -129,7 +132,7 @@ public class Dialtones : MonoBehaviour {
         foreach (char i in dialtone)
         {
             sound.PlaySoundAtTransform(i.ToString(), transform);
-            yield return new WaitForSeconds(0.104f);
+            yield return new WaitForSeconds(0.11f);
         }
     }
     string TwitchHelpMessage = "!{0} play: Presses the play button | !{0} <numbers>: Presses the specified numpad buttons | !{0} record <numbers>: Submits the specified number sequence";
